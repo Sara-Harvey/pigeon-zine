@@ -1,0 +1,55 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  background-color: black;
+}
+
+/* links */
+a:link,
+a:visited, 
+a:active {
+  color: gold;
+}
+
+a:hover {
+  color: white;
+}
+
+/* text */
+h1, p {
+  font-family: Roboto;
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  padding: 10px 0;
+}
+
+/* images */
+img {
+  width: 200px;
+  padding: 15px;
+}
+
+/* scroll area */
+div.content-container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* small devices */
+@media (min-width: 320px) and (max-width: 767px) {
+
+     div.content-container {
+      flex-direction: column;
+      padding: 0;
+      margin: auto;
+      width: 50%;
+    }
+    #scroll-message {
+      display: none;
+    }
+}
